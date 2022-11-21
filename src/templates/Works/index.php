@@ -10,7 +10,6 @@
     <div class="table-responsive">
         <table>
             <thead>
-                <a></a>
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
                     <th><?= $this->Paginator->sort('artist') ?></th>
