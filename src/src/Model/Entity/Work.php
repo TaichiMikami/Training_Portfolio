@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Model\Entity;
 
+use App\Model\Table\WorksTable;
 use Cake\ORM\Entity;
 
 /**
@@ -27,4 +28,14 @@ class Work extends Entity
         'artist' => true,
         'title' => true,
     ];
+
+    public function getTypeText()
+    {
+        return WorksTable::TYPE_LIST[$this->type];
+    }
+
+    public function getMasteringText()
+    {
+        return WorksTable::MASTERING_TEXT[$this->mastering];
+    }
 }
