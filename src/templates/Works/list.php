@@ -26,7 +26,7 @@
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $work->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $work->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $work->id], ['confirm' => __('Are you sure you want to delete # {0}?', $work->id)]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $work->id], ['confirm' => __('この作品のデータを消去しますか # {0}?', $work->id)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

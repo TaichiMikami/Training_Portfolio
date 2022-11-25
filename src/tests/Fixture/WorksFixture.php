@@ -22,6 +22,10 @@ class WorksFixture extends TestFixture
                 'id' => 1,
                 'artist' => 'Lorem ipsum dolor sit amet',
                 'title' => 'Lorem ipsum dolor sit amet',
+                'type' => 1,
+                'mastering' => 1,
+                'display' => 1,
+                'link' => 'Lorem ipsum dolor sit amet',
             ],
         ];
         parent::init();

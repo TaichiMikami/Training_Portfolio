@@ -1,4 +1,4 @@
-/*  reset */
+/* ===== reset ===== */
 
 *{
     margin-block: 0px;
@@ -15,59 +15,97 @@ h1,h2,h3,h4{
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Helvetica Neue",Arial,
+        "Hiragino Kaku Gothic ProN","Hiragino Sans",
+        sans-serif;
 }
 
 ul{
     list-style: none;
 }
 
-/* background */
+/* ===== background ===== */
 
 body{
-    background-image:url(../img/background_1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-image:url(../img/background_pattern_1.webp);
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
 }
 
-/* header */
+/* ===== header ===== */
 
 .header{
     position: relative;
-    background-color: #def7ff; 
+    background-color: #91919137; 
 }
 
 .header-wrapper{
+    display: flex;
+    justify-content: space-between;
     padding-top: 0;
     padding-bottom: 0;
-    text-align: center;
 }
 
 .site-title{
     display: inline-block;
-    /* font-weight: bold; */
-    font-size: 35px;
-    padding-top: 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 7rem;
+}
+
+.nav{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 7rem;
 }
 
 .nav-wrapper{
-    display: inline-flex; 
+    display: flex; 
 }
   
 .nav-item a{
     display: block;
-    font-size: 25px;
-    padding: 0.5rem;
-    margin: 0 1rem;
+    font-size: 15px;
+    padding-left: 35px;
 }
 
-/* main */
+/* ===== footer ===== */
+
+.footer{
+    background-color: #91919137; 
+    height: 65px;
+    font-size: 15px;
+}
+
+
+.footer .menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7rem;
+    padding-top: 25px;
+    /* margin-bottom: auto; */
+}
+   
+.footer .menu li {
+    padding-left: 35px;
+}
+
+.footer .menu li i{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* ===== main ===== */
   
 .main-wrapper{
     text-align: center;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
     /* padding-top: 40px;
     padding-bottom: 40px; */
 }
@@ -100,12 +138,89 @@ h1{
     vertical-align: middle;
 }
 
+/* ===== management ===== */
 
+.newwork{
+    border: 1px solid black;
+    width: 112px;
+    margin: 80px auto 40px auto;
+}
 
+.mng-main-wrapper{
+    /* margin-top: 80px; */
+    width: 1000px;
+    margin-bottom: 40px;
+}
 
+.table-responsive table,th,td{
+    border:1px solid #333;
+    border-collapse: collapse;
+}
 
-.footer{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #def7ff; 
-    height: 100px;
+.table-responsive .mng-th{
+    height: 35px;
+}
+
+.table-responsive .mng-id{
+    width: 50px;
+}
+
+.table-responsive .mng-artist{
+    width: 150px;
+}
+
+.table-responsive .mng-title{
+    width: 250px;
+}
+
+.table-responsive .mng-type{
+    width: 50px;
+}
+
+.table-responsive .mng-mastering{
+    width: 100px;
+}
+
+.table-responsive .mng-display{
+    width: 70px;
+}
+
+.table-responsive .mng-link{
+    width: 150px;
+}
+
+.table-responsive .mng-actions{
+    width: 200px;
+}
+
+.table-responsive table{
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.mng-th{
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.paginator{
+    text-align: center;
+}
+
+/* ===== add & edit===== */
+
+.add-main-wrapper{
+    margin-top: 80px;
+}
+
+.side-nav{
+    margin-bottom: 20px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+}
+
+.addcontents, .editcontents{
+    margin: 20px;
 }

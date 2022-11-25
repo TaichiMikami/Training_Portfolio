@@ -61,4 +61,15 @@ class WorksTableTest extends TestCase
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+
+    /**
+     * Test getList method
+     *
+     * @return void
+     * @uses \App\Model\Table\WorksTable::getList()
+     */
+    public function testGetList(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
 }

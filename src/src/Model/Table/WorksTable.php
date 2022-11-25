@@ -41,13 +41,43 @@ class WorksTable extends Table
         $this->setDisplayField('title');
     }
 
-    public function validationDefault(Validator $validator): Validator
-    {
-        return $validator;
-    }
-
     public function getList()
     {
        return $this->find()->where(["display" => self::DISPLAY_ON]); 
+    }
+
+    public function validationDefault(Validator $validator): Validator
+    {
+        $validator
+            ->scalar('artist')
+            ->maxLength('artist', 255)
+            ->notEmptyString('artist');
+
+        $validator
+            ->scalar('title')
+            ->maxLength('title', 255)
+            ->notEmptyString('title');
+
+        $validator
+            ->integer('type')
+            ->requirePresence('type', 'create')
+            ->notEmptyString('type');
+
+        $validator
+            ->integer('mastering')
+            ->requirePresence('mastering', 'create')
+            ->notEmptyString('mastering');
+
+        $validator
+            ->integer('display')
+            ->requirePresence('display', 'create')
+            ->notEmptyString('display');
+
+        $validator
+            ->scalar('link')
+            ->maxLength('link', 255)
+            ->notEmptyString('link');
+
+        return $validator;
     }
 }

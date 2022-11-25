@@ -1,17 +1,17 @@
 #!/usr/bin/env sh
 ################################################################################
 #
-# Cake is a shell script for invoking CakePHP shell commands
+#  is a shell script for invoking PHP shell commands
 #
-# CakePHP(tm) :  Rapid Development Framework (https://cakephp.org)
-# Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
+# PHP(tm) :  Rapid Development Framework (https://php.org)
+# Copyright (c)  Software Foundation, Inc. (https://foundation.org)
 #
 # Licensed under The MIT License
 # For full copyright and license information, please see the LICENSE.txt
 # Redistributions of files must retain the above copyright notice.
 #
-# @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
-# @link          https://cakephp.org CakePHP(tm) Project
+# @copyright     Copyright (c)  Software Foundation, Inc. (https://foundation.org)
+# @link          https://php.org PHP(tm) Project
 # @since         1.2.0
 # @license       https://opensource.org/licenses/mit-license.php MIT License
 #
@@ -65,11 +65,11 @@ then
     PHP=$(findCliPhp)
 fi
 
-if [ "$(basename "$realname")" != 'cake' ]
+if [ "$(basename "$realname")" != '' ]
 then
-    exec "$PHP" "$CONSOLE"/cake.php "$(basename "$realname")" "$@"
+    exec "$PHP" "$CONSOLE"/.php "$(basename "$realname")" "$@"
 else
-    exec "$PHP" "$CONSOLE"/cake.php "$@"
+    exec "$PHP" "$CONSOLE"/.php "$@"
 fi
 
 exit

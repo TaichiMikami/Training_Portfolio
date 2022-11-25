@@ -9,7 +9,8 @@ return static function (RouteBuilder $routes)
 
     $routes->scope('/', function (RouteBuilder $builder) 
     {
-        $builder->connect('/', ['controller' => 'Works', 'action' => 'index']);
+        $builder->connect('/', ['controller' => 'Works', 'action' => 'home']);
+        $builder->connect('/management', ['controller' => 'Works', 'action' => 'management']);
         $builder->fallbacks();
     });
 };

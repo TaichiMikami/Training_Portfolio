@@ -16,6 +16,9 @@
 
     <!-- CSSの読み込み -->
     <?= $this->Html->css(['works']) ?>
+    <!-- FONTAWESOMEの読み込み -->
+    <script src="https://kit.fontawesome.com/13e544be3c.js" crossorigin="anonymous"></script>
+
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
