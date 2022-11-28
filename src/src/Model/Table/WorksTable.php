@@ -28,9 +28,19 @@ class WorksTable extends Table
         self::MASTERING_NOT => ""
     ];
 
+    const MASTERING_STATUS = [
+        self::MASTERING_DID => "DID", 
+        self::MASTERING_NOT => "NOT"
+    ];
+
     // display
     const DISPLAY_ON = 1;
     const DISPLAY_OFF = 2;
+
+    const DISPLAY_STATUS = [
+        1 => "ON",
+        2 => "OFF",
+    ];
 
     public function initialize(array $config): void
     {

@@ -98,14 +98,14 @@ body{
     margin-right: 5px;
 }
 
-/* ===== main ===== */
+/* ===== home ===== */
   
 .main-wrapper{
     text-align: center;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     /* padding-top: 40px;
     padding-bottom: 40px; */
 }
@@ -174,7 +174,7 @@ h1{
 }
 
 .table-responsive .mng-type{
-    width: 50px;
+    width: 90px;
 }
 
 .table-responsive .mng-mastering{
@@ -205,16 +205,36 @@ h1{
 
 .paginator{
     text-align: center;
+    margin-bottom: 80px;
 }
 
-/* ===== add & edit===== */
+/* ===== add & edit ===== */
 
 .add-main-wrapper{
     margin-top: 80px;
+    margin-bottom: 90px;
 }
 
 .side-nav{
     margin-bottom: 20px;
+}
+
+.form table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form table,th,td{
+    border:1px solid #333;
+    border-collapse: collapse;
+}
+
+.form table{
+    width: 500px;
+}
+
+input{
+    width: 300px;
 }
 
 .submit-btn{
@@ -223,4 +243,8 @@ h1{
 
 .addcontents, .editcontents{
     margin: 20px;
+}
+
+.works label{
+    display: none;
 }

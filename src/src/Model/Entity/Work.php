@@ -26,4 +26,14 @@ class Work extends Entity
     {
         return WorksTable::MASTERING_TEXT[$this->mastering];
     }
+
+    public function getMasteringStatus()
+    {
+        return WorksTable::MASTERING_STATUS[$this->mastering];
+    }
+
+    public function getDisplayStatus()
+    {
+        return WorksTable::DISPLAY_STATUS[$this->display];
+    }
 }

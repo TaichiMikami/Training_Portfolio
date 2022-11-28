@@ -22,17 +22,6 @@ class WorksController extends AppController
         $this->set(compact('works'));
     }
 
-    // ===== 管理画面（単体） =====
-
-    public function view($id = null)
-    {
-        $work = $this->Works->get($id, [
-            'contain' => [],
-        ]);
-
-        $this->set(compact('work'));
-    }
-
     // ===== 管理画面（追加） =====
 
     public function add()
