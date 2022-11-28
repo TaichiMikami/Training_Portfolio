@@ -30,7 +30,7 @@
                 <legend><?= __('Add Work') ?></legend>
                 <div class = "addcontents"><?php echo $this->Form->control('artist'); ?></div>
                 <div class = "addcontents"><?php echo $this->Form->control('title'); ?></div>
-                <div class = "addcontents"><?php echo $this->Form->control('type')."(VoMix : 1, ParaMix : 2)"; ?></div>
+                <div class = "addcontents"><?php echo $this->Form->select('type', array(1 => "VoMix", 2 => "ParaMix"))."(VoMix : 1, ParaMix : 2)"; ?></div>
                 <div class = "addcontents"><?php echo $this->Form->control('mastering')."(Did : 1, Not : 2)"; ?></div>
                 <div class = "addcontents"><?php echo $this->Form->control('display')."(ON : 1, OFF : 2)"; ?></div>
                 <div class = "addcontents"><?php echo $this->Form->control('link')."(ID of YouTube)"; ?></div>

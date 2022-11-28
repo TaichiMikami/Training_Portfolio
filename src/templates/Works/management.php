@@ -16,7 +16,6 @@
         </nav>
     </div>
 </div>
-
 <div class = newwork>
     <?= $this->Html->link(__('Add New Work'), ['action' => 'add'], ['class' => 'button float-right']) ?>
 </div>

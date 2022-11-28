@@ -4,7 +4,6 @@
  * @var iterable<\App\Model\Entity\Work> $works
  */
 ?>
-
 <div class="header">
     <div class="header-wrapper">
         <a href="#" class="site-title">taichi's works</a>
