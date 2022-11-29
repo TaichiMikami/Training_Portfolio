@@ -5,7 +5,7 @@
             <ul class="nav-wrapper">
                 <li class="nav-item"><a href="/">home</a></li>
                 <li class="nav-item"><a href="#">price</a></li>
-                <li class="nav-item"><a href="/contact">contact</a></li>
+                <li class="nav-item"><a href="/contacts">contact</a></li>
             </ul>
         </nav>
     </div>

@@ -8,7 +8,7 @@
 }
 
 h1,h2,h3,h4{
-    font-size: unset;
+    font-size: 20px;
     font-weight: unset;
 }
 
@@ -24,19 +24,17 @@ ul{
     list-style: none;
 }
 
-/* ===== background ===== */
+/* ===== background & all===== */
 
 body{
     background-image:url(../img/background_pattern_1.webp);
     background-repeat: repeat;
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
 }
 
 /* ===== header ===== */
 
 .header{
-    position: relative;
+    /* position: relative; */
     background-color: #91919137; 
 }
 
@@ -74,10 +72,21 @@ body{
 
 /* ===== footer ===== */
 
+.main-wrapper{
+    min-height: 100vh;
+    position: relative;
+    /* padding-bottom: 65px;
+    box-sizing: border-box; */
+}
+
 .footer{
     background-color: #91919137; 
     height: 65px;
+    width: 100%;
     font-size: 15px;
+
+    /* position: absolute;
+    bottom: 0; */
 }
 
 
@@ -101,18 +110,18 @@ body{
 /* ===== home ===== */
   
 .main-wrapper{
+    box-sizing: border-box;
     text-align: center;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 h1{
     display: inline-block;
-    padding: 60px;
+    margin-bottom: 60px;
     font-size: 25px;
 }
 
@@ -120,7 +129,6 @@ h1{
     display: flex;
     height: 180px;
     width: 100%;
-    margin-bottom: 90px;
 }
 
 .song-container-2{
@@ -138,18 +146,21 @@ h1{
     vertical-align: middle;
 }
 
+.space{
+    height: 90px;
+}
+
 /* ===== management ===== */
 
 .newwork{
     border: 1px solid black;
     width: 112px;
-    margin: 80px auto 40px auto;
+    margin: 0 auto 60px auto;
 }
 
 .mng-main-wrapper{
-    /* margin-top: 80px; */
     width: 1000px;
-    margin-bottom: 40px;
+    margin: 0 auto 0 auto;
 }
 
 .table-responsive table,th,td{
@@ -205,18 +216,18 @@ h1{
 
 .paginator{
     text-align: center;
-    margin-bottom: 80px;
+    margin-top: 60px;
 }
 
 /* ===== add & edit ===== */
 
 .add-main-wrapper{
-    margin-top: 80px;
-    margin-bottom: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .side-nav{
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .form table{
@@ -238,7 +249,7 @@ input{
 }
 
 .submit-btn{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .addcontents, .editcontents{
@@ -247,4 +258,53 @@ input{
 
 .works label{
     display: none;
+}
+
+/* ===== contactform ===== */
+
+.form-main-wrapper{
+    margin: 0 auto 0 auto;
+}
+
+.contactform h1{
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.contactform{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contactform .main-wrapper{
+    margin-bottom: 0;
+}
+
+.form-table{
+    border-collapse: collapse;
+}
+
+.form-table tr{
+    height: 35px;
+}
+
+.form-table .head-area{
+    width: 200px;
+}
+
+.form-table .input-area{
+    width: 450px;
+}
+
+.form-table input, textarea{
+    width: 430px;
+}
+
+.form-table .body{
+    height: 189px;
+}
+
+.submit input{
+    width: 160px;
+    margin-top: 60px;
 }

@@ -27,10 +27,8 @@
 <?php echo $this->element("header"); ?>
 
 <!-- BODYの読み込み -->
-<body>
-    <?= $this->Flash->render() ?>
-    <?= $this->fetch('content') ?>
-</body>
+<?= $this->Flash->render() ?>
+<?= $this->fetch('content') ?>
 
 <!-- FOOTERの読み込み -->
 <?php echo $this->element("footer"); ?>
